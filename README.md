@@ -1,5 +1,5 @@
 # desafioAPI-grace-hopper
-Projeto de aplicativo python utilizando API Ricky and Morty
+Desenvolvimento de um aplicativo utilizando a API Ricky and Morty com Python
 
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)

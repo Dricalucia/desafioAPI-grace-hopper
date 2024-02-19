@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="col">
+    <h1>{{ location.name }}</h1>
+    <p><strong>Tipo:</strong> {{ location.type }}</p>
+    <p><strong>Dimensão:</strong> {{ location.dimension }}</p>
+
+    <h2>Personagens nesta Localização</h2>
+    <ul>
+      {% for character in characters %}
+      <li>
+        {{ character.name }} -
+        <a href="/profile/{{ character.id }}">Ver Perfil</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

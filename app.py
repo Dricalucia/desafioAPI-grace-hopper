@@ -3,7 +3,12 @@ import urllib.request, json
 
 app = Flask(__name__)
 
+# Defina as rotas da aplicação
 @app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/characters")
 def get_list_characters_page():
     url = "https://rickandmortyapi.com/api/character/"
     response = urllib.request.urlopen(url)
@@ -28,7 +33,7 @@ def get_profile(id):
     location_data = location_response.read()
     location = json.loads(location_data)
 
-    return render_template("profile.html", profile=profile, origin=origin, location=location)
+    return render_template("profile.html", character=profile, origin=origin, location=location)
 
 @app.route("/lista")
 def get_list_characters():

@@ -1,14 +1,22 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="row">
-    <div class="col-sm-3 col-6">
-        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="img-fluid img-thumbnail" />
-        <h3 class="h5">{{ profile.name }}</h3>
-        <p><strong>Espécie:</strong> {{ profile.species }}</p>
-        <p><strong>Gênero:</strong> {{ profile.gender }}</p>
-        <p><strong>Origem:</strong> <a href="/location_profile/{{ origin.id }}">{{ origin.name }}</a></p>
-        <p><strong>Localização:</strong> <a href="/location_profile/{{ location.id }}">{{ location.name }}</a></p>
+    <div class="container">
+        <h2>{{ character.name }}</h2>
+        <div class="card md-3, col-6">
+            <div class="row g-0">
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img src="{{ character.image }}" class="img-fluid rounded-start" alt="{{ character.name }}" style="max-height: 300px;" />
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <p><strong>Espécie:</strong> {{ character.species }}</p>
+                        <p><strong>Gênero:</strong> {{ character.gender }}</p>
+                        <p><strong>Origem:</strong> <a href="/location/{{ character.origin.url.split('/')[-1] }}">{{ character.origin.name }}</a></p>
+                        <p><strong>Localização:</strong> <a href="/location/{{ character.location.url.split('/')[-1] }}">{{ character.location.name }}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 {% endblock %}

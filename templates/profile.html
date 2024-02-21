@@ -16,7 +16,11 @@
                     <div class="card-body">
                         <p><strong>Espécie:</strong> {{ character.species }}</p>
                         <p><strong>Gênero:</strong> {{ character.gender }}</p>
-                        <p><strong>Origem:</strong> <a href="/location/{{ character.origin.url.split('/')[-1] }}">{{ character.origin.name }}</a></p>
+                        {% if origin_name != "Unknown" %}
+                            <p><strong>Origem:</strong> <a href="/location/{{ origin_url.split('/')[-1] }}">{{ origin_name }}</a></p>
+                        {% else %}
+                            <p><strong>Origem:</strong> {{ character.origin.name }}</p>
+                        {% endif %}                          
                         <p><strong>Localização:</strong> <a href="/location/{{ character.location.url.split('/')[-1] }}">{{ character.location.name }}</a></p>
                     </div>
                 </div>

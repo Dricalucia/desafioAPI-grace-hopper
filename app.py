@@ -18,22 +18,26 @@ def get_list_characters_page():
 
 @app.route("/profile/<id>")
 def get_profile(id):
-    url = f"https://rickandmortyapi.com/api/character/" + str(id)
+    url = "https://rickandmortyapi.com/api/character/" + id
     response = urllib.request.urlopen(url)
     data = response.read()
     profile = json.loads(data)
 
+    origin_name = "Unknown"
     origin_url = profile["origin"]["url"]
-    origin_response = urllib.request.urlopen(origin_url)
-    origin_data = origin_response.read()
-    origin = json.loads(origin_data)
+    if origin_url != "":
+        origin_response = urllib.request.urlopen(origin_url)
+        origin_data = origin_response.read()
+        origin = json.loads(origin_data)
+        origin_name = origin["name"]
+        origin_url = origin["url"]
 
     location_url = profile["location"]["url"]
     location_response = urllib.request.urlopen(location_url)
     location_data = location_response.read()
     location = json.loads(location_data)
 
-    return render_template("profile.html", character=profile, origin=origin, location=location)
+    return render_template("profile.html", character=profile, origin_name=origin_name, origin_url=origin_url, location=location)
 
 @app.route("/lista")
 def get_list_characters():

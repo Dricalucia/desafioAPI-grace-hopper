@@ -1,0 +1,6 @@
+# Arquivos .pyc e .pyo
+*.pyc
+*.pyo
+
+# Pasta do ambiente virtual
+venv/

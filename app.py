@@ -67,6 +67,7 @@ def get_location_profile(id):
     url = f"https://rickandmortyapi.com/api/location/{id}"
     response = urllib.request.urlopen(url)
     data = json.loads(response.read())
+
     characters = []
     for character_url in data["residents"]:
         character_response = urllib.request.urlopen(character_url)
@@ -87,7 +88,14 @@ def get_episode(id):
     url = f"https://rickandmortyapi.com/api/episode/{id}"
     response = urllib.request.urlopen(url)
     episode_data = json.loads(response.read())
-    return render_template("episode.html", episode=episode_data)
+    # return render_template("episode.html", episode=episode_data)
+
+    characters = []
+    for character_url in episode_data["characters"]:
+        character_response = urllib.request.urlopen(character_url)
+        character_data = json.loads(character_response.read())
+        characters.append({"name": character_data["name"], "url": character_url, "id": character_data["id"]})
+    return render_template("episode.html", episode=episode_data, characters=characters)
 
 if __name__ == "__main__":
     app.run(debug=True)

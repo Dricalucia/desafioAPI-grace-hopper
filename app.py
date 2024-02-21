@@ -3,10 +3,10 @@ import urllib.request, json
 
 app = Flask(__name__)
 
-# Defina as rotas da aplicação
-@app.route("/")
+# Função index que randeriza o template index.html
+@app.route("/")#Define a rota p/ a URL raiz do site
 def index():
-    return render_template("index.html")
+    return render_template("index.html")# Renderiza o template e retorna para o navegador
 
 @app.route("/characters")
 def get_list_characters_page():

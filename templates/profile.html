@@ -3,12 +3,16 @@
 {% block content %}
     <div class="container">
         <h2>{{ character.name }}</h2>
+        <!-- Cartão para exibir as informações do personagem -->
         <div class="card md-3, col-6">
-            <div class="row g-0">
+            <div class="row">
+                <!-- Coluna para a imagem do personagem -->
                 <div class="card col-lg-3 col-md-4 col-sm-6 col-12">
                     <img src="{{ character.image }}" class="img-fluid rounded-start" alt="{{ character.name }}" style="max-height: 300px;" />
                 </div>
+                <!-- Coluna para as informações do personagem -->
                 <div class="col-md-6">
+                    <!-- Corpo do cartão com informações dos personagens -->
                     <div class="card-body">
                         <p><strong>Espécie:</strong> {{ character.species }}</p>
                         <p><strong>Gênero:</strong> {{ character.gender }}</p>

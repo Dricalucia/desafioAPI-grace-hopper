@@ -2,10 +2,13 @@
 
 {% block content %}
     <div class="jumbotron text-center">
+        <!-- Título principal -->
         <h1 class="display-5">Bem-vindo à API de Rick e Morty</h1>
+        <!-- Texto de introdução -->
         <p class="lead">Explore personagens, locais e episódios do universo de Rick e Morty.</p>
         <hr class="my-4">
         <p>Escolha uma categoria no menu de navegação acima.</p>
+        <!-- Imagem Rick e Morty -->
         <img src="{{url_for('static', filename='Rick_e_Morty.jpg')}}" alt="Rick e Morty" class="img-fluid">
     </div>
 {% endblock %}

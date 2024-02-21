@@ -3,9 +3,12 @@
 <div class="container">
   <h2>Personagens</h2>
   <div class="row">
+    <!-- Loop para cada personagem -->
     {% for character in characters %}
+      <!-- Coluna para o card do personagem -->
       <div class="col-md-3">
         <div class="card mb-3">
+           <!-- Informações do personagem -->
           <img
             src="{{character.image}}"
             alt="{{character.name}}"

@@ -1,9 +1,10 @@
 # desafioAPI-grace-hopper
-Desenvolvimento de um aplicativo em Python com a API Ricky and Morty, utilizando três endpoints: um para personagens, um para
+Desenvolvimento de um aplicativo em Python com a API Rick and Morty, utilizando três endpoints: um para personagens, um para
 as localizações e dimensões e um para os episódios.
 
-
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
+
+<img src="https://github.com/Dricalucia/desafioAPI-grace-hopper/blob/main/static/Rick_e_Morty.jpg" alt="Uso da API Rick and Morty com Python">
 
 # Tecnologias utilizadas
 * Python

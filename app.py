@@ -13,7 +13,7 @@ def get_list_characters_page():
 
 @app.route("/profile/<id>")
 def get_profile(id):
-    url = f"https://rickandmortyapi.com/api/character/{id}"
+    url = f"https://rickandmortyapi.com/api/character/" + str(id)
     response = urllib.request.urlopen(url)
     data = response.read()
     profile = json.loads(data)
@@ -57,12 +57,17 @@ def get_locations():
     locations = locations_data["results"]
     return render_template("locations.html", locations=locations)
 
-@app.route("/location_profile/<int:id>")
+@app.route("/location/<id>")
 def get_location_profile(id):
     url = f"https://rickandmortyapi.com/api/location/{id}"
     response = urllib.request.urlopen(url)
-    location_data = json.loads(response.read())
-    return render_template("location_profile.html", location=location_data)
+    data = json.loads(response.read())
+    characters = []
+    for character_url in data["residents"]:
+        character_response = urllib.request.urlopen(character_url)
+        character_data = json.loads(character_response.read())
+        characters.append({"name": character_data["name"], "url": character_url, "id": character_data["id"]})
+    return render_template("location.html", location=data, characters=characters)
 
 @app.route("/episodes")
 def get_episodes():

@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-
 {% block content %}
 <div class="row">
   <div class="col">
@@ -11,8 +10,7 @@
     <ul>
       {% for character in characters %}
       <li>
-        {{ character.name }} -
-        <a href="/profile/{{ character.id }}">Ver Perfil</a>
+        <a href="{{ url_for('get_profile', id=character.id) }}"><p>{{character.name}}</p></a>
       </li>
       {% endfor %}
     </ul>

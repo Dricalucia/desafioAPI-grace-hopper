@@ -1,0 +1,36 @@
+/* Estilos gerais */
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para elementos de cabeçalho */
+header {
+    background-color: #333384;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+

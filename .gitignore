@@ -2,5 +2,17 @@
 *.pyc
 *.pyo
 
-# Pasta do ambiente virtual
+# IDE
+.idea/
+.vscode/
+__pycache__/
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+
+# virtualenv
+.venv
 venv/
+ENV/

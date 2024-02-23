@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Squad Grace Hopper" />
-  <meta
-    name="description"
-    content="Esta API foi criada nas aulas da WoMakersCode"/>
-  <meta name="keywords" content="API,API do Rick and Morty,API pública,Python">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Squad Grace Hopper" />
+    <meta
+      name="description"
+      content="Esta API foi criada nas aulas da WoMakersCode"
+    />
+    <meta
+      name="keywords"
+      content="API,API do Rick and Morty,API pública,Python"
+    />
 
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
-  <title>API Rick e Morty!</title>
+    <!-- Estilos personalizados -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>API Rick e Morty</h1>
-    <nav>
+    <title>API Rick e Morty!</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>API Rick e Morty</h1>
+      <nav>
         <ul>
-            <li><a href="/">Início</a></li>
-            <li><a href="/characters">Personagens</a></li>
-            <li><a href="/locations">Localização</a></li>
-            <li><a href="/episodes">Episódios</a></li>
-            <li><a href="/lista">JSON</a></li>
+          <li><a href="/">Início</a></li>
+          <li><a href="/characters">Personagens</a></li>
+          <li><a href="/locations">Localização</a></li>
+          <li><a href="/episodes">Episódios</a></li>
+          <li><a href="/lista">JSON</a></li>
         </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    {% block content %}
-    <!-- Conteúdo da Página -->
-    {% endblock %}
-  </main>
-</body>
+    <main>
+      {% block content %}
+      <!-- Conteúdo da Página -->
+      {% endblock %}
+    </main>
+  </body>
 </html>

@@ -9,7 +9,7 @@ as localizações e dimensões e um para os episódios.
 # Tecnologias utilizadas e pré-requisitos
 * Python 3
 * Flask
-* API Pública do Seriado Rick and Morty
+* API Pública - Seriado Rick and Morty
 
 # Instalação e Criação de Ambiente Virtual
 
@@ -17,7 +17,7 @@ as localizações e dimensões e um para os episódios.
 ```shell
 https://github.com/Dricalucia/desafioAPI-grace-hopper.git
 ```
-- Certifique-se que tenhas instalado o Flask. Depois, no seu repositório local, esteja na raiz do projeto para criação do ambiente virtual. Utilize os seguinyes comandos no terminal:
+- Certifique-se que tenhas instalado o Flask. Depois, no seu repositório local, esteja na raiz do projeto para criação do ambiente virtual. Utilize os seguintes comandos no terminal:
 
 - Windows
 ```shell
@@ -90,5 +90,4 @@ flask --app app run
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/14989288?s=200&v=4" width=115><br><sub>Andreia Vieira Gomes</sub>](https://github.com/WoMakersCode)
 
 ---
-
-© 2024 - Squad Grace-Hopper
+© 2024 - Squad Grace Hopper

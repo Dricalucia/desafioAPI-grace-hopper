@@ -10,6 +10,7 @@ as localizações e dimensões e um para os episódios.
 * Python 3
 * Flask
 * API Pública - Seriado Rick and Morty
+* Bootstrap
 
 # Instalação e Criação de Ambiente Virtual
 

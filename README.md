@@ -9,8 +9,6 @@ as localizações e dimensões e um para os episódios.
 # Tecnologias utilizadas e pré-requisitos
 * Python 3
 * Flask
-* HTML
-* Bootstrap
 * API Pública - Seriado Rick and Morty
 
 # Instalação e Criação de Ambiente Virtual

@@ -7,10 +7,10 @@ as localizações e dimensões e um para os episódios.
 <img src="https://github.com/Dricalucia/desafioAPI-grace-hopper/blob/main/static/Rick_e_Morty.jpg" alt="Uso da API Rick and Morty com Python">
 
 # Tecnologias utilizadas e pré-requisitos
-* Python 3
-* Flask
-* API Pública - Seriado Rick and Morty
-* Bootstrap
+- ``Python 3``
+- ``Flask``
+- ``API Pública - Seriado Rick and Morty``
+- ``Bootstrap``
 
 # Instalação e Criação de Ambiente Virtual
 

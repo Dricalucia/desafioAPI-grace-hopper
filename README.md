@@ -9,6 +9,8 @@ as localizações e dimensões e um para os episódios.
 # Tecnologias utilizadas e pré-requisitos
 * Python 3
 * Flask
+* HTML
+* Bootstrap
 * API Pública - Seriado Rick and Morty
 
 # Instalação e Criação de Ambiente Virtual
@@ -69,6 +71,10 @@ flask --app app run
 │   └── profile.html
 └── venv
 ```
+# Apresentação do Projeto
+- Slides 📊: [Apresentação  Google](https://docs.google.com/presentation/d/1aItqQlEnnYwtAxnsMqw6TNi67Kco4rCFz4MkqbT1BVY/edit?usp=sharing)
+- Vídeo da apresentação 🎥: [YouTube](https://www.youtube.com/watch?v=0MqC3-19fXQ)
+
 
 # Squad Grace Hopper
 1. Adriana Lúcia de França Rodrigues:<BR>
